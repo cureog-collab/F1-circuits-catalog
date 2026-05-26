@@ -1,0 +1,407 @@
+[
+    {
+        "id": "argentina",
+        "name": "Argentine Grand Prix (Autódromo Oscar y Juan Gálvez)",
+        "image": "images/Autódromo_Oscar_y_Juan_Gálvez_Circuito_N°_6_por_Senna.svg.png"
+    },
+    {
+        "id": "australia-adelaide",
+        "name": "Australian Grand Prix (Adelaide Street Circuit)",
+        "image": "images/Adelaide_(long_route).svg.png"
+    },
+    {
+        "id": "australia",
+        "name": "Australian Grand Prix (Albert Park Circuit)",
+        "image": "images/Albert_Park_Circuit_2021.svg.png"
+    },
+    {
+        "id": "austria",
+        "name": "Austrian Grand Prix (Red Bull Ring)",
+        "image": "images/Spielberg_bare_map_numbers_contextless_2021_corner_names.svg.png"
+    },
+    {
+        "id": "austria-zeltweg",
+        "name": "Austrian Grand Prix (Zeltweg Airfield)",
+        "image": "images/Circuit_Zeltweg.png"
+    },
+    {
+        "id": "azerbaijan",
+        "name": "Azerbaijan Grand Prix (Baku City Circuit)",
+        "image": "images/Baku_Formula_One_circuit_map.svg.png"
+    },
+    {
+        "id": "bahrain",
+        "name": "Bahrain Grand Prix (Bahrain International Circuit)",
+        "image": "images/Bahrain_International_Circuit--Grand_Prix_Layout.svg.png"
+    },
+    {
+        "id": "belgium-spa",
+        "name": "Belgian Grand Prix (Circuit de Spa-Francorchamps)",
+        "image": "images/Spa-Francorchamps_of_Belgium.svg.png"
+    },
+    {
+        "id": "belgium-zolder",
+        "name": "Belgian Grand Prix (Circuit Zolder)",
+        "image": "images/Circuit_Zolder-1975-1985.svg.png"
+    },
+    {
+        "id": "belgium-nivelles",
+        "name": "Belgian Grand Prix (Nivelles-Baulers)",
+        "image": "images/Circuit_Nivelles-Baulers.png"
+    },
+    {
+        "id": "brazil-jacarepagua",
+        "name": "Brazilian Grand Prix (Autódromo Internacional Nelson Piquet - Jacarepaguá)",
+        "image": "images/Autódromo_de_Jacarepaguá_1978-1995.png"
+    },
+    {
+        "id": "brazil-interlagos",
+        "name": "Brazilian Grand Prix (Autódromo José Carlos Pace - Interlagos)",
+        "image": "images/Autódromo_José_Carlos_Pace_(AKA_Interlagos)_track_map.svg.png"
+    },
+    {
+        "id": "great-britain-aintree",
+        "name": "British Grand Prix (Aintree Motor Racing Circuit)",
+        "image": "images/Circuit_Aintree.svg.png"
+    },
+    {
+        "id": "great-britain-brands-hatch",
+        "name": "British Grand Prix (Brands Hatch)",
+        "image": "images/Brands_Hatch_1976-1987.svg.png"
+    },
+    {
+        "id": "great-britain-donington",
+        "name": "British Grand Prix (Donington Park)",
+        "image": "images/Donington_as_of_2006.svg.png"
+    },
+    {
+        "id": "great-britain-goodwood",
+        "name": "British Grand Prix (Goodwood Circuit)",
+        "image": "images/Goodwood_track_map.svg.png"
+    },
+    {
+        "id": "great-britain-silverstone",
+        "name": "British Grand Prix (Silverstone Circuit)",
+        "image": "images/Silverstone_Circuit_vector_map.png"
+    },
+    {
+        "id": "canada",
+        "name": "Canadian Grand Prix (Circuit Gilles-Villeneuve)",
+        "image": "images/Circuit_Gilles_Villeneuve.svg.png"
+    },
+    {
+        "id": "canada-mont-tremblant",
+        "name": "Canadian Grand Prix (Circuit Mont-Tremblant)",
+        "image": "images/Circuit_Mont_Tremblant.png"
+    },
+    {
+        "id": "canada-mosport",
+        "name": "Canadian Grand Prix (Mosport Park)",
+        "image": "images/Mosport.svg.png"
+    },
+    {
+        "id": "china",
+        "name": "Chinese Grand Prix (Shanghai International Circuit)",
+        "image": "images/Shanghai_International_Racing_Circuit_track_map.svg.png"
+    },
+    {
+        "id": "netherlands",
+        "name": "Dutch Grand Prix (Circuit Zandvoort)",
+        "image": "images/Zandvoort_Circuit.png"
+    },
+    {
+        "id": "france-le-mans",
+        "name": "French Grand Prix (Bugatti Circuit)",
+        "image": "images/Circuit_Le_Mans_Bugatti.png"
+    },
+    {
+        "id": "france-charade",
+        "name": "French Grand Prix (Charade Circuit)",
+        "image": "images/Circuit_Charade_1958_1988.png"
+    },
+    {
+        "id": "france-magny-cours",
+        "name": "French Grand Prix (Circuit de Nevers Magny-Cours)",
+        "image": "images/Circuit_de_Nevers_Magny-Cours.svg.png"
+    },
+    {
+        "id": "france-paul-ricard",
+        "name": "French Grand Prix (Circuit Paul Ricard)",
+        "image": "images/Le_Castellet_circuit_map_Formula_One_2019_and_2021_with_corner_names_English_19_07_2021.svg.png"
+    },
+    {
+        "id": "france-dijon",
+        "name": "French Grand Prix (Dijon-Prenois)",
+        "image": "images/Dijon-Prenois_Circuit.svg.png"
+    },
+    {
+        "id": "france-reims",
+        "name": "French Grand Prix (Reims-Gueux)",
+        "image": "images/Circuit-Reims-1954.png"
+    },
+    {
+        "id": "france-rouen",
+        "name": "French Grand Prix (Rouen-Les-Essarts)",
+        "image": "images/Rouen_track_layout_1955-1971.gif"
+    },
+    {
+        "id": "germany-avus",
+        "name": "German Grand Prix (AVUS)",
+        "image": "images/Circuit_AVUS.svg.png"
+    },
+    {
+        "id": "germany-hockenheim",
+        "name": "German Grand Prix (Hockenheimring)",
+        "image": "images/Hockenheim2012.svg.png"
+    },
+    {
+        "id": "germany-nurburgring",
+        "name": "German Grand Prix (Nürburgring)",
+        "image": "images/Nürburgring_-_Grand-Prix-Strecke.svg.png"
+    },
+    {
+        "id": "hungary",
+        "name": "Hungarian Grand Prix (Hungaroring)",
+        "image": "images/Hungaroring.svg.png"
+    },
+    {
+        "id": "india",
+        "name": "Indian Grand Prix (Buddh International Circuit)",
+        "image": "images/Buddh_Circuit_1.svg.png"
+    },
+    {
+        "id": "emilia-romagna",
+        "name": "Italian Grand Prix (Autodromo Enzo e Dino Ferrari - Imola)",
+        "image": "images/Imola_2009.svg.png"
+    },
+    {
+        "id": "italy-monza",
+        "name": "Italian Grand Prix (Autodromo Nazionale di Monza)",
+        "image": "images/Monza_track_map.svg.png"
+    },
+    {
+        "id": "italy-mugello",
+        "name": "Italian Grand Prix (Mugello Circuit)",
+        "image": "images/Mugello_Racing_Circuit_track_map_15_turns.svg.png"
+    },
+    {
+        "id": "italy-pescara",
+        "name": "Italian Grand Prix (Pescara Circuit)",
+        "image": "images/Circuit_Pescara.svg.png"
+    },
+    {
+        "id": "japan-fuji",
+        "name": "Japanese Grand Prix (Fuji Speedway)",
+        "image": "images/Fuji.svg.png"
+    },
+    {
+        "id": "japan-suzuka",
+        "name": "Japanese Grand Prix (Suzuka International Racing Course)",
+        "image": "images/Suzuka_circuit_map--2005.svg.png"
+    },
+    {
+        "id": "japan-aida",
+        "name": "Japanese Grand Prix (TI Circuit Aida)",
+        "image": "images/Circuit_TI_(Aida).png"
+    },
+    {
+        "id": "malaysia",
+        "name": "Malaysian Grand Prix (Sepang International Circuit)",
+        "image": "images/Sepang.svg.png"
+    },
+    {
+        "id": "mexico",
+        "name": "Mexican Grand Prix (Autódromo Hermanos Rodríguez)",
+        "image": "images/Autódromo_Hermanos_Rodríguez_2015.svg.png"
+    },
+    {
+        "id": "monaco",
+        "name": "Monaco Grand Prix (Circuit de Monaco)",
+        "image": "images/Monte_Carlo_Formula_1_track_map.svg.png"
+    },
+    {
+        "id": "morocco",
+        "name": "Moroccan Grand Prix (Ain-Diab Circuit)",
+        "image": "images/Ain-Diab.svg.png"
+    },
+    {
+        "id": "portugal-algarve",
+        "name": "Portuguese Grand Prix (Algarve International Circuit - Portimão)",
+        "image": "images/Autódromo_do_Algarve_F1_Sectors.svg.png"
+    },
+    {
+        "id": "portugal-estoril",
+        "name": "Portuguese Grand Prix (Autódromo do Estoril)",
+        "image": "images/Autódromo_de_Estoril_1994-1999.png"
+    },
+    {
+        "id": "portugal-boavista",
+        "name": "Portuguese Grand Prix (Circuito da Boavista)",
+        "image": "images/Boavista_(Oporto).svg.png"
+    },
+    {
+        "id": "portugal-monsanto",
+        "name": "Portuguese Grand Prix (Monsanto Street Circuit)",
+        "image": "images/Circuit_Monsanto.png"
+    },
+    {
+        "id": "qatar",
+        "name": "Qatar Grand Prix (Lusail International Circuit)",
+        "image": "images/Lusail_International_Circuit_2023.svg.png"
+    },
+    {
+        "id": "russia",
+        "name": "Russian Grand Prix (Sochi Autodrom)",
+        "image": "images/Circuit_Sochi.svg.png"
+    },
+    {
+        "id": "saudi-arabia",
+        "name": "Saudi Arabian Grand Prix (Jeddah Corniche Circuit)",
+        "image": "images/Jeddah_Street_Circuit_2021.svg.png"
+    },
+    {
+        "id": "saudi-arabia-qiddiya",
+        "name": "Saudi Arabian Grand Prix (Qiddiya Speed Park)",
+        "image": "images/Qiddiya_speed_park.png"
+    },
+    {
+        "id": "singapore",
+        "name": "Singapore Grand Prix (Marina Bay Street Circuit)",
+        "image": "images/Marina_Bay_circuit_2023.svg.png"
+    },
+    {
+        "id": "south-africa-kyalami",
+        "name": "South African Grand Prix (Kyalami Racing Circuit)",
+        "image": "images/Kyalami_1992_Layout.png"
+    },
+    {
+        "id": "south-africa-east-london",
+        "name": "South African Grand Prix (Prince George Circuit)",
+        "image": "images/Prince_George_Circuit.svg.png"
+    },
+    {
+        "id": "south-korea",
+        "name": "South Korean Grand Prix (Korea International Circuit)",
+        "image": "images/Korea_international_circuit_v3.svg.png"
+    },
+    {
+        "id": "spain-barcelona",
+        "name": "Spanish Grand Prix (Circuit de Barcelona-Catalunya)",
+        "image": "images/Circuit_de_Catalunya_moto_2021.svg.png"
+    },
+    {
+        "id": "spain-jerez",
+        "name": "Spanish Grand Prix (Circuito de Jerez)",
+        "image": "images/Jerez_Grand_prix_Circuit_1994-2003.svg.png"
+    },
+    {
+        "id": "spain-pedralbes",
+        "name": "Spanish Grand Prix (Circuito de Pedralbes)",
+        "image": "images/Circuit_Pedralbes.png"
+    },
+    {
+        "id": "spain-jarama",
+        "name": "Spanish Grand Prix (Circuito del Jarama)",
+        "image": "images/Circuito_Permanente_del_Jarama_1980.svg.png"
+    },
+    {
+        "id": "spain-madrid",
+        "name": "Spanish Grand Prix (IFEMA Madrid Circuit)",
+        "image": "images/Madring_(2026).svg.png"
+    },
+    {
+        "id": "spain-montjuic",
+        "name": "Spanish Grand Prix (Montjuïc Circuit)",
+        "image": "images/Montjuïc_circuit.svg.png"
+    },
+    {
+        "id": "spain-valencia",
+        "name": "Spanish Grand Prix (Valencia Street Circuit)",
+        "image": "images/Circuit_Valencia_street.svg.png"
+    },
+    {
+        "id": "sweden",
+        "name": "Swedish Grand Prix (Scandinavian Raceway - Anderstorp)",
+        "image": "images/Scandinavian_Raceway_1978.svg.png"
+    },
+    {
+        "id": "switzerland",
+        "name": "Swiss Grand Prix (Circuit Bremgarten)",
+        "image": "images/Circuit_Bremgarten.svg.png"
+    },
+    {
+        "id": "turkey",
+        "name": "Turkish Grand Prix (Istanbul Park)",
+        "image": "images/Istanbul_park.svg.png"
+    },
+    {
+        "id": "abu-dhabi",
+        "name": "United Arab Emirates Grand Prix (Yas Marina Circuit)",
+        "image": "images/Yas_Marina_Circuit.png"
+    },
+    {
+        "id": "usa-caesars-palace",
+        "name": "United States Grand Prix (Caesars Palace Grand Prix Circuit)",
+        "image": "images/330px-Circuit_Caesars_Palace.png"
+    },
+    {
+        "id": "usa-austin",
+        "name": "United States Grand Prix (Circuit of the Americas)",
+        "image": "images/Austin_circuit.svg.png"
+    },
+    {
+        "id": "usa-detroit",
+        "name": "United States Grand Prix (Detroit Street Circuit)",
+        "image": "images/Downtown_Detroit_Street_Circuit.svg.png"
+    },
+    {
+        "id": "usa-dallas",
+        "name": "United States Grand Prix (Fair Park)",
+        "image": "images/Circuit_Fair_Park.svg.png"
+    },
+    {
+        "id": "usa-indy",
+        "name": "United States Grand Prix (Indianapolis Motor Speedway)",
+        "image": "images/Indianapolis_Motor_Speedway_-_road_course.svg.png"
+    },
+    {
+        "id": "las-vegas",
+        "name": "United States Grand Prix (Las Vegas Strip Circuit)",
+        "image": "images/Las_Vegas_Strip_Circuit_2023.png"
+    },
+    {
+        "id": "usa-long-beach",
+        "name": "United States Grand Prix (Long Beach Street Circuit)",
+        "image": "images/Long_Beach_1983.jpg"
+    },
+    {
+        "id": "miami",
+        "name": "United States Grand Prix (Miami International Autodrome)",
+        "image": "images/Hard_Rock_Stadium_Circuit_2022.svg.png"
+    },
+    {
+        "id": "usa-phoenix",
+        "name": "United States Grand Prix (Phoenix Street Circuit)",
+        "image": "images/Phoenix_Grand_Prix_Route_-_1991.svg.png"
+    },
+    {
+        "id": "usa-riverside",
+        "name": "United States Grand Prix (Riverside International Raceway)",
+        "image": "images/Riverside_International_Raceway_1967.svg.png"
+    },
+    {
+        "id": "usa-sebring",
+        "name": "United States Grand Prix (Sebring International Raceway)",
+        "image": "images/Sebring_International_Raceway_-_Historical_(1952).svg.png"
+    },
+    {
+        "id": "usa-watkins-glen",
+        "name": "United States Grand Prix (Watkins Glen International)",
+        "image": "images/Watkins_Glen_1975-1983.png"
+    },
+    {
+        "id": "vietnam",
+        "name": "Vietnamese Grand Prix (Hanoi Circuit)",
+        "image": "images/Circuit_de_Hanoi.png"
+    }
+]
