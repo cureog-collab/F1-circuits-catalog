@@ -17,8 +17,7 @@ async function fetchCircuitData() {
     }
 }
 
-function renderTrackImg(tracksList)
-{
+function renderTrackImg(tracksList) {
     if (tracksList.length === 0) {
         catalogContainer.innerHTML = `
             <div style="grid-column: 1 / -1; text-align: center; padding: 3rem 0;">
@@ -35,9 +34,9 @@ function renderTrackImg(tracksList)
         htmlOutput += `
             <article class="cirt-crd">
                 <div class="track-img">
-                    <img src="${track.image}" loading="lazy" alt="${track.name} map">
+                    <img src="${track.image}" loading="lazy" alt="${track.circuitName} map">
                 </div>
-                <div class="grandprix-brief">${track.name}</div>
+                <div class="grandprix-brief">${track.circuitName}</div>
             </article>
         `;
     });
@@ -48,7 +47,7 @@ searchBar.addEventListener('input', (event) => {
     const rawSignal = event.target.value.toLowerCase();
     
     const filteredTracks = globalTracksData.filter((track) => {
-        return track.name.toLowerCase().includes(rawSignal);
+        return track.circuitName.toLowerCase().includes(rawSignal);
     });
 
     renderTrackImg(filteredTracks);
@@ -58,6 +57,24 @@ searchBar.addEventListener('input', (event) => {
 // active the main-viewer
 // disable the catalog scrollbar & enable the main-viewer scrollbar
 
+// top-nav-btns functions (they act like a filter, only show circuits that are inactiver/ active)
+
 // closeBtn.addEventListener('input')
 
 fetchCircuitData(globalTracksData);
+
+// test
+// ------------------------------------------------------------------------------------------------------------
+async function testJolpicaAPI() {
+    console.log("Calling API...");
+
+    const response = await fetch("https://api.jolpi.ca/ergast/f1/circuits.json?limit=100");
+    
+    const data = await response.json();
+
+    console.log("Package received!");
+    console.log(data);
+}
+
+testJolpicaAPI();
+// -------------------------------------------------------------------------------------------------------------
