@@ -29,6 +29,7 @@ body {
     width: 0.5rem;
 }
 ::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
     background-color: rgba(120, 10, 10, 0.8);
     backdrop-filter: blur(12px) saturate(120%); 
     -webkit-backdrop-filter: blur(12px) saturate(120%);
@@ -141,4 +142,111 @@ body {
 }
 .cirt-crd:hover .grandprix-brief {
     opacity: 1;
+}
+
+/* view a circuit card in detail */
+.detail-viewer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    gap: 1rem;
+    box-sizing: border-box;
+    z-index: 1000;
+
+    background-color: rgba(15, 15, 20, 0.75);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.detail-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1.5fr;
+
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    background-color: transparent;
+    border-radius: 1.5rem;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    padding: 3rem;
+    position: relative;
+
+    transform: translateY(50px), scale(0.95);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    grid-template-areas: 
+    "map map name location"
+    "map map year date"
+    "racer racer podium podium";
+
+    overflow-y: auto;
+}
+
+.detail-viewer.active {
+    opacity: 1;
+    visibility: visible;
+}
+.detail-viewer.active .detail-grid {
+    transform: translateY(0) scale(1);
+}
+
+#close-detail-viewer {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--text-muted);
+}
+#close-detail-viewer:hover {
+    color: var(--f1-red);
+}
+
+.d-layout, .d-name, .d-loc, .d-est-yr, .d-best-racer, .d-upcoming-race, .d-last-podium {
+    background-color: var(--f1-red);
+    border-radius: 3rem;
+}
+.d-layout {
+    grid-area: map;
+    border: 2px dashed red;
+}
+.d-name {
+    grid-area: name;
+    border: 2px dashed blue;
+}
+.d-loc {
+    grid-area: location;
+    border: 2px dashed green;
+}
+.d-est-yr {
+    grid-area: year;
+    border: 2px dashed orange;
+}
+.d-upcoming-race {
+    grid-area: date;
+    border: 2px dashed purple;
+}
+.d-best-racer {
+    grid-area: racer;
+    border: 2px dashed teal;
+}
+.d-last-podium {
+    grid-area: podium;
+    border: 2px dashed brown;
 }

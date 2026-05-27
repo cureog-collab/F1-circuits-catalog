@@ -54,4 +54,10 @@ searchBar.addEventListener('input', (event) => {
     renderTrackImg(filteredTracks);
 });
 
+// function pressedOnCard()
+// active the main-viewer
+// disable the catalog scrollbar & enable the main-viewer scrollbar
+
+// closeBtn.addEventListener('input')
+
 fetchCircuitData(globalTracksData);
