@@ -1,0 +1,18 @@
+[
+  {
+    "circuitId": "madring",
+    "circuitName": "Madrid IFEMA Circuit",
+    "Location": {
+      "locality": "Madrid",
+      "country": "Spain"
+    }
+  },
+  {
+    "circuitId": "hanoi",
+    "circuitName": "Hanoi Street Circuit",
+    "Location": {
+      "locality": "Hanoi",
+      "country": "Vietnam"
+    }
+  }
+]
