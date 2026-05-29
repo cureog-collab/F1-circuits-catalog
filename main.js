@@ -1,8 +1,11 @@
 const catalogContainer = document.querySelector('.catalog');
 const searchBar = document.getElementById('main-search-bar');
 const closeBtn = document.getElementById('close-detail-viewer');
+const btnActive = document.getElementById('active-filter');
+const btnInactive = document.getElementById('inactive-filter');
 
 let globalCirtData = [];
+let activeCirtIds = [];
 
 // get data from various .json files
 async function fetchCircuitData() {
@@ -11,11 +14,16 @@ async function fetchCircuitData() {
         const imageMap = await (await fetch('image-map.json')).json();
         const jolpicaf1Data = await (await fetch('https://api.jolpi.ca/ergast/f1/circuits.json?limit=100')).json();
         
-        // circuits from jolpicaf1 api
-        const jolpicaf1CirtArray = jolpicaf1Data.MRData.CircuitTable.Circuits;
-        
+        // circuits from jolpicaf1 api (and remove the broken las_vegas id)
+        const jolpicaf1CirtArray = jolpicaf1Data.MRData.CircuitTable.Circuits.filter(circuit => circuit.circuitId != 'las_vegas');
+
         // circuits that are not included in jolpicaf1 data (hardcoded in another .json file)
         const customCirts = await (await fetch('custom-circuits.json')).json();
+
+        // attaining data of the ongoing season
+        const currSeasonData = await (await fetch('https://api.jolpi.ca/ergast/f1/current.json')).json();
+        const currRaces = currSeasonData.MRData.RaceTable.Races;
+        activeCirtIds = currRaces.map(race => race.Circuit.circuitId);
 
         // merge the two arrays
         const combinedCirtList = [...jolpicaf1CirtArray, ...customCirts];
@@ -23,11 +31,24 @@ async function fetchCircuitData() {
         // merge the images with the circuits list
         globalCirtData = combinedCirtList.map((circuit) => {
             let currId = circuit.circuitId;
+            let curName = circuit.circuitName;
+
+            // fix a data corruption in the jolpicaf1 api
+            if (currId == 'vegas') {
+                curName = "Ceasars Palace Grand Prix";
+                circuit.url = "https://en.wikipedia.org/wiki/Caesars_Palace_Grand_Prix";
+            }
+
+            if (currId == 'las_vegas') {
+                circuit.url = "https://en.wikipedia.org/wiki/Las_Vegas_Grand_Prix";
+            }
+            
             return {
                 circuitId: currId,
                 circuitName: circuit.circuitName,
                 image: imageMap[currId] || 'images/Undefined.png',
-                location: circuit.Location.locality + ', ' + circuit.Location.country
+                location: circuit.Location.locality + ', ' + circuit.Location.country,
+                url: circuit.url
             };
         })
 
@@ -136,6 +157,39 @@ catalogContainer.addEventListener('click', (event) => {
 })
 
 // top-nav-btns functions (they act like a filter, only show circuits that are inactiver/ active)
+let currFilter = 'all';
+
+btnActive.addEventListener('click', () => {
+    if (currFilter == 'active') {
+        currFilter = 'all';
+        btnActive.classList.remove('selected-filter');
+        renderTrackImg(globalCirtData);
+    } else {
+        currFilter = 'active';
+
+        btnActive.classList.add('selected-filter');
+        btnInactive.classList.remove('selected-filter');
+
+        const activeCirts = globalCirtData.filter(cirt => activeCirtIds.includes(cirt.circuitId));
+        renderTrackImg(activeCirts);
+    }
+})
+
+btnInactive.addEventListener('click', () => {
+    if (currFilter == 'inactive') {
+        currFilter = 'all';
+        btnInactive.classList.remove('selected-filter');
+        renderTrackImg(globalCirtData);
+    } else {
+        currFilter = 'inactive';
+        
+        btnInactive.classList.add('selected-filter');
+        btnActive.classList.remove('selected-filter')
+
+        const inactiveCirts = globalCirtData.filter(cirt => !activeCirtIds.includes(cirt.circuitId));
+        renderTrackImg(inactiveCirts);
+    }
+})
 
 // close button of the detail viewer mode
 closeBtn.addEventListener('click', (event) => {

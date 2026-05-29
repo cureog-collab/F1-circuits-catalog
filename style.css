@@ -107,6 +107,12 @@ body {
 
     transition: 0.3s ease;
 }
+.top-nav-btns li button.selected-filter {
+    font-weight: 500;
+}
+.top-nav li button.selected-filter::after {
+    width: 100%;
+}
 .top-nav-btns li button::after {
     content: '';
     position: absolute;

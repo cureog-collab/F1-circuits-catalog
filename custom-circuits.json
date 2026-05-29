@@ -14,5 +14,13 @@
       "locality": "Hanoi",
       "country": "Vietnam"
     }
+  },
+  {
+    "circuitId": "vegas_caesar_palace",
+    "circuitName": "Caesar's Palace",
+    "Location": {
+      "locality": "Las Vegas",
+      "country": "USA"
+    }
   }
 ]
